@@ -1,5 +1,3 @@
-# app.py
-
 from estudiante import Estudiante
 
 def mostrar_menu():
