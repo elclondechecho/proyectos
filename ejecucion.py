@@ -1,5 +1,3 @@
-# ejecucion.py
-
 from estudiante import Estudiante
 
 def main():
