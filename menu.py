@@ -8,6 +8,7 @@ def mostrar_menu():
     print("4. Pagar pensión")
     print("5. Salir")
 
+
 def opciones():
     estudiante = Estudiante() 
 
@@ -28,6 +29,3 @@ def opciones():
             break
         else:
             print("Opción invalida. Intente de nuevo.")
-
-if __name__ == "__main__":
-    opciones()
