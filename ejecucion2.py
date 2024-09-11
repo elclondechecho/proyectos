@@ -8,6 +8,7 @@ def main():
         Estudiante("Maria", 27, "quinto semestre")
     ]
 
+
     for estudiante in estudiantes:
         estudiante.imprimirDatos()
         estudiante.matricular()
