@@ -1,5 +1,6 @@
 from estudiante import Estudiante
 
+
 def main():
     estudiante = Estudiante(nombre="sergio", edad=18, semestre="primer semestre")
     
@@ -16,3 +17,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
