@@ -1,20 +1,23 @@
 from estudiante import Estudiante
 
-
 def main():
-    estudiante = Estudiante(nombre="sergio", edad=18, semestre="primer semestre")
+    estudiante1 = Estudiante.crearEstudiante("Patrick", 19, "primer semestre")
+    estudiante2 = Estudiante.crearEstudiante("Luis", 23, "segundo semestre")
+    estudiante3 = Estudiante.crearEstudiante("Maria", 27, "quinto semestre")
+
+    estudiantes = [estudiante1, estudiante2, estudiante3]
+
+    for estudiante in estudiantes:
+        estudiante.imprimirDatos()
+        estudiante.matricular()
+        estudiante.pagarPension()
+        print()
     
-    print("Datos iniciales del estudiante:")
-    estudiante.imprimirDatos()
+    print(Estudiante.esMayorDeEdad(17))  
+    print(Estudiante.esMayorDeEdad(18))  
+    print(Estudiante.saludo())
     
-    estudiante.ingresarDatos()
-    
-    print("Datos después de ingresar nuevos datos:")
-    estudiante.imprimirDatos()
-    
-    estudiante.matricular()
-    estudiante.pagarPension()
+    print(Estudiante.cantidadEstudiantes())
 
 if __name__ == "__main__":
     main()
-
